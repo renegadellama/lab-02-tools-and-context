@@ -15,9 +15,9 @@ describe('lab-02.js', function() {
 });
 
 describe('lab-02.js', function() {
-  describe('#apply Animal Object', function(){
+  describe('#apply Cat Object', function(){
     it('should return a string', function() {
-      assert.equal(typeof lab.WinningCat('Kathy', 'Dalmation', 3 , 'Denver'), 'string');
+      assert.equal(typeof lab.WinningCat('Kathy', 'Black Cat', 3 , 'Denver', 'Purrr'), 'string');
     });
 
     it('should return, Congrats to Kathy! S/he is a Black Cat, 3 years old, and is from Denver. Purrr!', function() {
