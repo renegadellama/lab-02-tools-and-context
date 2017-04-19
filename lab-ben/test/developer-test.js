@@ -3,8 +3,7 @@
 const assert = require('assert');
 const dev = require('../lib/developer.js');
 
-describe('developer.js constuctor functions'
-, function() {
+describe('developer.js constuctor functions', function() {
   describe('CompanyDeveloper call testing', function() {
     let sakurai = new dev.CompanyDeveloper('Masahiro Sakurai', 'Nintendo');
     it('should make a valid object', function() {
@@ -20,9 +19,12 @@ describe('developer.js constuctor functions'
   describe('Developer\'s games', function() {
     let sakurai = new dev.CompanyDeveloper('Masahiro Sakurai', 'Nintendo');
     sakurai.made(['Kirby', 'Smash Brothers', 'Kid Icarus']);
-    console.log(sakurai);
-    it('should make a valid array', function() {
-      assert.equal(typeof sakurai.hasMade, 'array');
+    console.log(sakurai.games);
+    it('should be a valid array', function() {
+      assert.equal(Array.isArray(sakurai.games), true);
+    });
+    it('should have a length of more than 0', function() {
+      assert.notEqual(sakurai.games.length, 0);
     });
   });
 });
