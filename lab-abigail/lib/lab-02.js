@@ -35,8 +35,8 @@ exports.WinningTurtle = function(name, breed, age, city, speed) {
   let turtle = exports.Animal.bind(this);
   this.speed = speed;
   turtle();
-  console.log(`${name} is a ${breed}. S/he is ${age} years old, from ${city}, and it travelling at a speed of ${speed} mph.`);
-  return `${name} is a ${breed}. S/he is ${age} years old, from ${city}, and it travelling at a speed of ${speed} mph.`;
+  console.log(`${name} is a ${breed}. S/he is ${age} years old, from ${city}, and is travelling at a speed of ${speed} mph.`);
+  return `${name} is a ${breed}. S/he is ${age} years old, from ${city}, and is travelling at a speed of ${speed} mph.`;
 };
 
 exports.winnerTurtle = new exports.WinningTurtle('Grover', 'Green Turtle', 5 , 'San Diego', '1.5');

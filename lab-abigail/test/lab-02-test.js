@@ -25,3 +25,15 @@ describe('lab-02.js', function() {
     });
   });
 });
+
+describe('lab-02.js', function() {
+  describe('#bind Turtle Object', function(){
+    it('should return a string', function() {
+      assert.equal(typeof lab.WinningTurtle('Grover', 'Green Turtle', 5 , 'San Diego', '1.5'), 'string');
+    });
+
+    it('should return, Grover is a Green Turtle. S/he is 5 years old, from San Diego, and it travelling at a speed of 1.5 mph.', function() {
+      assert.equal(lab.WinningTurtle('Grover', 'Green Turtle', 5 , 'San Diego', '1.5'), 'Grover is a Green Turtle. S/he is 5 years old, from San Diego, and is travelling at a speed of 1.5 mph.');
+    });
+  });
+});
