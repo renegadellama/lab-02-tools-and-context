@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "mocha",
-    "lint": "lint"
+    "lint": "npm run lint",
+    "testjs": "npm run test"
   },
   "author": "wat-man",
   "license": "MIT",
