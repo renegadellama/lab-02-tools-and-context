@@ -1,0 +1,19 @@
+{
+  "name": "lab-abigail",
+  "version": "1.0.0",
+  "description": "lab day 02 for js 401",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint ./lib"
+  },
+  "author": "Abigail White",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "mocha": "^3.2.0"
+  }
+}
