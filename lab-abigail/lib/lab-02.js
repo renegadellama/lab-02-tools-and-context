@@ -2,23 +2,24 @@
 
 module.exports = exports = {};
 
-exports.Dog = function(name, age) {
+exports.Dog = function(name, breed, age) {
   this.name = name;
+  this.breed = breed;
   this.age = age;
 };
 
 //Call
-exports.WinningDog = function(name, age) {
-  exports.Dog.call(this, name, age);
+exports.WinningDog = function(name, breed, age) {
+  exports.Dog.call(this, name, breed, age);
 };
 
-exports.winner = new exports.WinningDog('Judy', 20);
+exports.winner = new exports.WinningDog('Judy', 'beagle', 20);
 console.log(exports.winner);
 
 //Apply
-exports.WinningDog1 = function(name, age) {
-  exports.Dog.apply(this, [name], [age]);
+exports.WinningDogApply = function(name, breed, age) {
+  exports.Dog.apply(this, [name, breed, age]);
 };
 
-exports.winner1 = new exports.WinningDog1('Kathy', 15);
-console.log(exports.winner1);
+exports.winnerApply = new exports.WinningDogApply('Kathy', 'dalmation', 15);
+console.log(exports.winnerApply);
