@@ -2,7 +2,7 @@
 
 module.exports = exports = {};
 
-exports.Dog = function(name, breed, age, city) {
+exports.Animal = function(name, breed, age, city) {
   this.name = name;
   this.breed = breed;
   this.age = age;
@@ -10,19 +10,21 @@ exports.Dog = function(name, breed, age, city) {
 };
 
 //Call
-exports.WinningDog = function(name, breed, age, city) {
-  exports.Dog.call(this, name, breed, age, city);
-  console.log(`${name} is a ${breed}. S/he is ${age} years old and is from ${city}.`);
-  return `${name} is a ${breed}. S/he is ${age} years old and is from ${city}.`;
+exports.WinningDog = function(name, breed, age, city, bark) {
+  exports.Animal.call(this, name, breed, age, city);
+  this.bark = bark;
+  console.log(`${name} is a ${breed}. S/he is ${age} years old and is from ${city}. ${bark}!`);
+  return `${name} is a ${breed}. S/he is ${age} years old and is from ${city}. ${bark}!`;
 };
 
-exports.winner = new exports.WinningDog('Spot', 'Beagle', 4, 'Seattle');
+exports.winnerDog = new exports.WinningDog('Spot', 'Beagle', 4, 'Seattle', 'Woof');
 
 //Apply
-exports.WinningDogApply = function(name, breed, age, city) {
-  exports.Dog.apply(this, [name, breed, age, city]);
-  console.log(`Congrats to ${name}! S/he is a ${breed}, ${age} years old, and is from ${city}.`);
-  return `Congrats to ${name}! S/he is a ${breed}, ${age} years old, and is from ${city}.`;
+exports.WinningCat = function(name, breed, age, city, purr) {
+  exports.Animal.apply(this, [name, breed, age, city]);
+  this.purr = purr;
+  console.log(`Congrats to ${name}! S/he is a ${breed}, ${age} years old, and is from ${city}. ${purr}!`);
+  return `Congrats to ${name}! S/he is a ${breed}, ${age} years old, and is from ${city}. ${purr}!`;
 };
 
-exports.winnerApply = new exports.WinningDogApply('Kathy', 'Dalmation', 3 , 'Denver');
+exports.winnerCat = new exports.WinningCat('Kathy', 'Black Cat', 3 , 'Denver', 'Purrr');
