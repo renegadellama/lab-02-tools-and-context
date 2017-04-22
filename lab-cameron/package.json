@@ -1,0 +1,26 @@
+{
+  "name": "lab-02-tools-and-context",
+  "version": "1.0.0",
+  "description": "401 JavaScript lab 02",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint ./lib",
+    "start": "node index.js",
+    "build": "npm run test && npm run lint"
+  },
+  "keywords": [
+    "tools",
+    "context",
+    "npm"
+  ],
+  "author": "Cameron Bacon",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "mocha": "^3.2.0"
+  }
+}
