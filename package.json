@@ -1,0 +1,30 @@
+{
+  "name": "lab-02-tools-and-context",
+  "version": "1.0.0",
+  "description": "Lab 2",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.19.0",
+    "mocha": "^3.2.0"
+  },
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint ./lib",
+    "start": "node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renegadellama/lab-02-tools-and-context.git"
+  },
+  "author": "Isak Swearingen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/renegadellama/lab-02-tools-and-context/issues"
+  },
+  "homepage": "https://github.com/renegadellama/lab-02-tools-and-context#readme"
+}
