@@ -1,0 +1,25 @@
+{
+  "name": "lab-caleb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "lint": "npm run lint",
+    "testjs": "npm run test"
+  },
+  "author": "wat-man",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "eslint": "^3.19.0",
+    "lint": "^1.1.2"
+  },
+  "dependencies": {
+    "mocha": "^3.2.0",
+    "lint": "^1.1.2"
+  }
+}
